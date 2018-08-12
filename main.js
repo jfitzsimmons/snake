@@ -90,8 +90,8 @@ function draw(){
     score++;
     eatAud.play();
     food={
-      x:unit*Math.floor(Math.random()*17+1),
-      y:unit*Math.floor(Math.random()*15+3)}
+      x : Math.floor(Math.random()*17+1) * box,
+      y : Math.floor(Math.random()*15+3) * box}
   }else{snake.pop();}
 
   let newHead = {

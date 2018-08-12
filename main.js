@@ -64,7 +64,7 @@ function collision(head,array){
 //draw to canvas
 function draw(){
 
-  ctx.drawImage(ground,0,0);
+  ctx.drawImage(groundImg,0,0);
 
   for( let i = 0; i < snake.length ; i++){
       ctx.fillStyle = ( i == 0 )? "green" : "white";

@@ -88,19 +88,19 @@ function draw(){
     eatAud.play();
     food={
       x:unit*Math.floor(Math.random()*17+1),
-      y:unit*Math.floor(Math.random()*15+3)
-    }else{snake.pop();}
+      y:unit*Math.floor(Math.random()*15+3)}
+  }else{snake.pop();}
 
-    let newHead = {
-      x:snakeX,
-      y:snakeY
-    }
+  let newHead = {
+    x:snakeX,
+    y:snakeY
+  }
 
-    //game over
-    if(snakeX<box || snakeX>17*box || snakeY<3*box || snakeY>17*box || collison(newHead,snake)){
-      clearInterval(game);
-      deadAud.play();
-    }
+  //game over
+  if(snakeX<box || snakeX>17*box || snakeY<3*box || snakeY>17*box || collison(newHead,snake)){
+    clearInterval(game);
+    deadAud.play();
+  }
 
   snake.unshift(newHead);
 

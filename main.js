@@ -63,16 +63,17 @@ function collision(head,array){
 
 //draw to canvas
 function draw(){
+  console.log('1st snake 0 x ' + snake[0].x);
   ctx.drawImage(groundImg,0,0);
-  for(let i=0; i<snake.length;i++){
-    ctx.fillStyle = (i==0)?'green' : 'white';
+  for(let i=0; i<snake.length; i++){
+    ctx.fillStyle = (i==0) ? 'green' : 'white';
     ctx.fillRect(snake[i].x,snake[i].y,box,box);
   }
   ctx.drawImage(foodImg,food.x,food.y);
 
-  //old head position
-  //snake movement
+  console.log('2nd snake 0 x ' + snake[0].x);
 
+  //old head position
   let snakeX = snake[0].x;
   let snakeY = snake[0].y;
 

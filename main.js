@@ -80,7 +80,7 @@ function draw(){
   let snakeX = snake[0].x;
   let snakeY = snake[0].y;
   //find new snake head direction???
-  if (d=="lEFT") snakeX-=box;
+  if (d=="LEFT") snakeX-=box;
   if (d=="UP") snakeY-=box;
   if (d=="RIGHT") snakeX+=box;
   if (d=="DOWN") snakeY+=box;

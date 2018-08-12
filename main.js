@@ -100,7 +100,7 @@ function draw(){
   }
 
   //game over
-  if(snakeX<box || snakeX>17*box || snakeY<3*box || snakeY>17*box || collison(newHead,snake)){
+  if(snakeX<box || snakeX>17*box || snakeY<3*box || snakeY>17*box || collision(newHead,snake)){
     clearInterval(game);
     deadAud.play();
   }

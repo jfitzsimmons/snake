@@ -1,0 +1,17 @@
+{
+  "extends": ["eslint:recommended", "google"],
+  "rules": {
+    // Additional, per-project rules...
+  },
+  "parserOptions": {
+   "ecmaVersion": 6
+  },
+  "globals": {
+    "document": false
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+}
